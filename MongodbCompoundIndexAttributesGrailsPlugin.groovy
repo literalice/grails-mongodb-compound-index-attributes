@@ -8,7 +8,7 @@ class MongodbCompoundIndexAttributesGrailsPlugin {
     // the other plugins this plugin depends on
     def loadAfter = ["mongodb"]
 
-    def title = "Mongodb Compound Index Attributes Plugin" // Headline display name of the plugin
+    def title = "MongoDB Compound Index Attributes Plugin" // Headline display name of the plugin
     def author = "Masatoshi Hayashi"
     def authorEmail = "literalice@monochromeroad.com"
     def description = '''\

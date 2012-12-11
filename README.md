@@ -18,7 +18,7 @@
             // ...
 
             compile ":mongodb:1.0.0.GA"
-            compile ":mongodb-compound-index-attributes:1.0"
+            compile ":mongodb-compound-index-attributes:1.1"
         }
     }
 

@@ -55,9 +55,9 @@ class MongoDatastore extends org.grails.datastore.mapping.mongo.MongoDatastore {
                     final MongoCollection mappedForm = classMapping.getMappedForm();
                     if (mappedForm != null) {
                         for (Map compoundIndex : mappedForm.getCompoundIndices()) {
-                            if (compoundIndex.indexAttributes) {
+                            if (compoundIndex.indexAttributes instanceof Map) {
                                 DBObject options = new BasicDBObject(compoundIndex.indexAttributes as Map)
-                                compoundIndex.indexAttributes = null
+                                compoundIndex.remove("indexAttributes")
                                 DBObject indexDef = new BasicDBObject(compoundIndex);
                                 collection.ensureIndex(indexDef, options);
                             } else {

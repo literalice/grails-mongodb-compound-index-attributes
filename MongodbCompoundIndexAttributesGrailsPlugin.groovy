@@ -16,7 +16,7 @@ The plugin provides a functionality to add attributes to MongoDB's compound inde
 '''
 
     // URL to the plugin's documentation
-    def documentation = "http://grails.org/plugin/mongodb-compound-index-attributes"
+    def documentation = "https://github.com/literalice/grails-mongodb-compound-index-attributes"
 
     def license = "APACHE"
 

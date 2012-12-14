@@ -27,7 +27,7 @@ private repositoryConfigLoader(name, path) {
     }
 }
 
-for (repositoryName in ["releaseRepository", "snapshotRepository"]) {
+for (repositoryName in ["grailsCentral", "releaseRepository", "snapshotRepository"]) {
     repositoryConfigLoader(repositoryName, "${repositoryName}.credential.properties")
     for (param in ["url", "type", "portal"]) {
         if (grails.project.repos."${repositoryName}"."${param}") {

@@ -4,14 +4,6 @@
 
     //Build.groovy
     grails.project.dependency.resolution = {
-        // ...
-
-        repositories {
-            // ...
-
-            // For the plugin
-            mavenRepo "http://repository-monochromeroad.forge.cloudbees.com/release"
-        }
 
         // ...
         plugins {
@@ -20,6 +12,8 @@
             compile ":mongodb:1.0.0.GA"
             compile ":mongodb-compound-index-attributes:1.1"
         }
+
+        // ...
     }
 
 ## Usage ##
